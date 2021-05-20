@@ -1,2 +1,4 @@
 # docker-restler-fuzzer
-Dockerised version of Microsoft's RESTler-fuzzer
+A Dockerised version of Microsoft's RESTler-fuzzer (https://github.com/microsoft/restler-fuzzer)
+
+
