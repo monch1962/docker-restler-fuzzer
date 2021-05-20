@@ -9,3 +9,9 @@ RUN cd restler-fuzzer && mkdir bins && python3.8 ./build-restler.py --dest_dir .
 WORKDIR restler-fuzzer
 RUN ls
 RUN ls bins
+RUN mkdir swagger
+RUN mkdir Compile
+COPY swagger swagger
+RUN pwd
+ENTRYPOINT bins/restler/Restler compile --api_spec swagger/*.yaml
+
